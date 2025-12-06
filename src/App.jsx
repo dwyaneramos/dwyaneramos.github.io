@@ -1,21 +1,18 @@
 import './App.css'
 import {LoadingScreen} from "./components/LoadingScreen" 
 import {Navbar} from "./components/Navbar"
-import {HomeBG} from "./components/HomeBG"
+import {MobileMenu} from "./components/MobileMenu"
+import {HomeBG, Title} from "./components/HomeBG"
+import {About} from "./components/sections/About.jsx" 
 import "./index.css"
 import {useState, useEffect} from "react";
 
-export const Title = ({opacityClass}) => {
-  return (
-  <h1 className={` ${opacityClass} text-8xl w-screen red absolute text-center top-1/2 font-mono font-bold`}>John Smith</h1>
-  )
-}
 
 
 
 function App() {
-  const [isLoaded, setIsLoaded ] = useState(false)
-
+  const [isLoaded, setIsLoaded ] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete = {() => setIsLoaded(true)} />}
@@ -23,10 +20,11 @@ function App() {
 
       <div className = {`min-h-screen 
         transition-opacity duration-800 ${isLoaded ? "opacity-100": "opacity-0"} text-gray-100`}>
-       
-        <HomeBG/>
-        <Navbar />
 
+        <HomeBG/>
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <About/>
 
       </div>
     </>

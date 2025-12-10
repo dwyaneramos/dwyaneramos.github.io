@@ -30,7 +30,7 @@ export const SubTitle = () => {
 }
 export const Title = ({opacityClass}) => {
   return (
-  <h1 className={` ${opacityClass} text-8xl w-screen z-70 absolute text-center top-1/2 font-mono font-bold`}>John Smith</h1>
+  <h1 className={` ${opacityClass} text-8xl w-screen z-70 absolute text-center top-1/2 font-mono font-bold`}>Dwyane Ramos</h1>
   )
 }
 

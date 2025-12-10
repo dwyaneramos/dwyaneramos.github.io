@@ -9,7 +9,7 @@ export const Contact = () => {
       <h2 className = "text-5xl font-bold text-center font-mono mb-8 text-white">Contact</h2>
       
         <div className = "text-4xl text-center">
-         Want to get in touch? Contact me on LinkedIn 
+         Want to get in touch? Contact me on <a href="https://www.linkedin.com/in/dwyane-ramos/" target="_blank">LinkedIn </a>
         </div>
 
 

@@ -55,6 +55,7 @@ html, body {
 
   .animate-whole-fish-movement {
     animation: whole-fish-movement var(--duration, 6s) linear infinite;
+    animation-delay: -6s;
   }
 
 

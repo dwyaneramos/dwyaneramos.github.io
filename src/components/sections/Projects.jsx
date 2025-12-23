@@ -9,7 +9,7 @@ const Project = ({image, title, subtitle, desc, github, tech_stack}) => {
     return (
     <RevealOnScroll>
       <div className = "rounded-xl border-white/10 border-1 hover:-translate-y-1 transition grid max py-5 my-3 px-2 grid-cols-1 md:grid-cols-2 gap-6 "> 
-        <img src={image} alt="Screenshot of Deadly Fight" className = "rounded-xl hover:scale-105 transition ease-in w-full max-w-lg mx-auto mx-5"/>
+        <img src={`${import.meta.env.BASE_URL}${image}`} alt={`Screenshot of ${title}`} className = "rounded-xl hover:scale-105 transition ease-in w-full max-w-lg mx-auto mx-5"/>
           <div className = "relative ">
             <h3 className = "text-3xl  font-mono font-bold underline">{title}</h3>
             <h4 className = "text-2xl font-mono font-bold ">{subtitle} </h4>

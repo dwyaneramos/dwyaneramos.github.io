@@ -17,10 +17,9 @@ export const Home = () => {
   return ( 
     <RevealOnScroll>
     <div id="#home" className = "z-40">
-      <div className = "flex flex-col justify-center items-center absolute top-1/2 w-screen">
+      <div className = "flex flex-col justify-center gap-3 items-center absolute top-1/2 w-screen">
         <Title/>
         <SubTitle className = "z-0"/>
-        <ContactBar/>
       </div>
       <div className="relative h-screen w-screen text-4xl overflow-hidden z-10">
         <School upperY = {30} lowerY = {5} isSlow = {true} isSmall= {true} body = {fishBodyImg} tail = {fishTailImg} amount = {30} widthBoundaries = {fishBoundaries} heightFactor = {2 / 3}/>

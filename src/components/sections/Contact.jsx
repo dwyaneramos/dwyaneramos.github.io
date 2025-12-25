@@ -1,7 +1,33 @@
 import {RevealOnScroll} from "../RevealOnScroll"
 import {useRef, useState} from "react"
-
+import { HiOutlineMail } from "react-icons/hi";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+
+
+
+export const ContactFooter = () => {
+  const iconSize = 50;
+ return (
+  <section className = "pl-10 fixed bottom-0 flex flex-row place-content-between bg-[#011536] py-3 w-screen">
+   <div className = "flex flex-row gap-3">
+      
+      <a href="https://github.com/riz3ndrr" target="_blank">
+        <FaGithub size={iconSize} className = "hover:-translate-y-1 transition cursor-pointer"/>
+      </a>  
+
+      <a href="https://www.linkedin.com/in/dwyane-ramos/" target="_blank">
+        <FaLinkedin size={iconSize} className = "hover:-translate-y-1 transition cursor-pointer"/>
+      </a>
+
+      <HiOutlineMail size={iconSize}/>
+      <h1 className = "text-2xl mt-2">riz3ndrr@gmail.com</h1>
+    </div> 
+
+    <a href="https://github.com/dwyaneramos/my-portfolio" target="_blank" className = "text-2xl text-gray-300 mt-2 pr-10">Portfolio Source Code</a>
+  </section>
+ ) 
+}
 
 export const Contact = () => {
   return (

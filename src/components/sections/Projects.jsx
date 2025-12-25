@@ -46,7 +46,7 @@ export const Projects = () => {
 
   return (
   <RevealOnScroll>
-  <section id="projects" className = "pt-30 min-h-screen h-auto relative flex justify-center items-center">
+  <section id="projects" className = "py-30 min-h-screen h-auto relative flex justify-center items-center">
     
 
     <div className = "max-w-6xl">

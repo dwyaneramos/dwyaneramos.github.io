@@ -4,7 +4,7 @@ import {MobileMenu} from "./components/MobileMenu"
 import {Home, Title} from "./components/sections/Home"
 import {About} from "./components/sections/About" 
 import {Projects} from "./components/sections/Projects"
-import {Contact} from "./components/sections/Contact"
+import {ContactFooter} from "./components/sections/Contact"
 import "./index.css"
 import {useState, useEffect} from "react";
 
@@ -26,7 +26,7 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <About/>
         <Projects/>
-        <Contact/>
+        <ContactFooter/>
 
       </div>
     </>

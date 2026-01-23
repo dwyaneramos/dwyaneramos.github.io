@@ -1,8 +1,8 @@
 import {RevealOnScroll} from "../RevealOnScroll"
 
 export const About = () => {
-  const programmingLanguages = ["Python", "C", "Java", "JavaScript", "Bash", "SQL"];
-  const tools = ["React", "Git", "Linux", "JavaFX", "JUnit", "NVim", "TailwindCSS", "Pandas", "APIs", "Vite"];
+  const programmingLanguages = ["Python", "C", "Java", "JavaScript", "SQL"];
+  const tools = ["React", "Git", "Linux", "NumPy", "Vite", "TailwindCSS", "Pandas", "APIs"];
   const courses = ["DSA", "Software Engineering", "Embedded Systems", "Computer Architecture",
     "AI", "Networks", "Compilers", "Discrete Maths", "Cryptography", "Databases"];
   const languages = ["English", "Tagalog", "Spanish"]
@@ -112,4 +112,4 @@ export const About = () => {
     </section>
     </RevealOnScroll>
   )
-}
+} 

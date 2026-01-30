@@ -17,7 +17,7 @@ export const Home = () => {
   return ( 
     <RevealOnScroll>
     <div id="#home" className = "z-40">
-      <div className = "flex flex-col justify-center gap-3 items-center absolute top-1/2 w-screen">
+      <div className = "flex flex-col justify-center gap-3 items-center absolute top-2/5 w-screen">
         <Title/>
         <SubTitle className = "z-0"/>
       </div>

@@ -8,11 +8,11 @@ import person3 from "../../../public/assets/parentAndChild.png"
 
 
 export const ContactFooter = () => {
-  const iconSize = 55;
+  const iconSize = 40;
  return (
-  <section className = "pl-10 fixed bottom-0 z-100 flex flex-row place-content-center bg-[#011536] py-2 w-screen">
+  <section className = "pl-10 fixed bottom-0 z-100 flex flex-row place-content-center bg-[#000] py-2 w-screen">
     <img src={person1} alt="" className="h-80 fixed bottom-5 left-30 animate-idle"/>
-    <img src={person3} alt="" className="h-70 fixed bottom-5 right-20 animate-idle"/>
+    <img src={person3} alt="" className="h-70 fixed bottom-0 right-20 animate-idle"/>
    <div className = "flex flex-row gap-3">
       
       <a href="https://github.com/riz3ndrr" target="_blank">

@@ -6,6 +6,7 @@ import sharkTailImg from "../../../public/assets/shark-tail.png"
 import githubLogo from "../../../public/assets/github-mark.png"
 import {useMemo} from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import {RevealOnScroll} from "../RevealOnScroll"
 import {School} from "../Fish.jsx"
 
@@ -20,6 +21,10 @@ export const Home = () => {
       <div className = "flex flex-col justify-center gap-3 items-center absolute top-2/5 w-screen">
         <Title/>
         <SubTitle className = "z-0"/>
+        <div className="flex flex-row items-center gap-3">
+          <FaLocationDot size={45}/>
+          <p className="text-2xl font-mono font-bold text-center">Christchurch, New Zealand</p>
+        </div>
       </div>
       <div className="relative h-screen w-screen text-4xl overflow-hidden z-10">
         <School upperY = {30} lowerY = {5} isSlow = {true} isSmall= {true} body = {fishBodyImg} tail = {fishTailImg}

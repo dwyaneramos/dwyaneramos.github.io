@@ -9,7 +9,8 @@
     "github": "https://github.com/dwyaneramos/cubing-comp-round-sim",
     "image": "assets/comp-sim.png",
     "type": "Personal",
-    "tech_stack": ["Python", "NumPy", "Pandas", "MatPlotLib", "CustomTkinter", "WCA API"]
+    "tech_stack": ["Python", "NumPy", "Pandas", "MatPlotLib", "CustomTkinter", "WCA API"],
+    "featured" : true
     },
 
     {
@@ -19,7 +20,8 @@
     "github": "https://github.com/dwyaneramos/wca-comp-sim",
     "image": "assets/comp-sim-website-2.png",
     "type": "Personal",
-    "tech_stack": ["JavaScript", "React", "TailwindCSS", "ChartJS", "WCA API"]
+    "tech_stack": ["JavaScript", "React", "TailwindCSS", "ChartJS", "WCA API"],
+    "featured" : true
     },
     {
     "title": "Drift Fever",
@@ -28,7 +30,18 @@
     "github": "https://github.com/dwyaneramos/seng201-project-driftfever",
     "image": "assets/drift-fever.png",
     "type": "University",
-    "tech_stack": ["Java", "JavaFX", "Maven", "Gradle", "JUnit"]
+    "tech_stack": ["Java", "JavaFX", "Maven", "Gradle", "JUnit"],
+    "featured" : true
+    },
+    {
+    "title": "Deadly Fight",
+    "subtitle": "2D Fighting Game",
+    "description": "Inspired by the new upcoming Mortal Kombat 1, I decided to make my own fighting game. Improved my understanding of OOP and the process behind game development",
+    "github": "https://github.com/dwyaneramos/deadly-fight",
+    "image": "assets/deadly-fight.png",
+    "type": "Personal",
+    "tech_stack": ["Python", "PyGame"],
+    "featured" : true
     },
     {
     "title": "Portfolio Website",
@@ -37,7 +50,8 @@
     "github": "https://github.com/dwyaneramos/liam-portfolio",
     "image": "assets/liam-portfolio.png",
     "type": "Freelance",
-    "tech_stack": ["React", "JavaScript", "TailwindCSS", "HTML" , "CSS"]
+    "tech_stack": ["React", "JavaScript", "TailwindCSS", "HTML" , "CSS"],
+    "featured" : false
     },
 
 
@@ -48,18 +62,21 @@
     "github": "https://github.com/dwyaneramos/ence-ucfk4-shooting-game",
     "image": "assets/gunslinger.jpg",
     "type": "University",
-    "tech_stack": ["C"]
+    "tech_stack": ["C"],
+    "featured" : false
     },
 
     {
-    "title": "Deadly Fight",
-    "subtitle": "2D Fighting Game",
-    "description": "Inspired by the new upcoming Mortal Kombat 1, I decided to make my own fighting game. Improved my understanding of OOP and the process behind game development",
-    "github": "https://github.com/dwyaneramos/deadly-fight",
-    "image": "assets/deadly-fight.png",
-    "type": "Personal",
-    "tech_stack": ["Python", "PyGame"]
+    "title": "TCP File-Transfer Programs",
+    "subtitle": "",
+    "description": "A pair of programs utilising the TCP protocol to transfer any type of files",
+    "github": "https://github.com/dwyaneramos/tcp-file-transfer",
+    "image": "assets/tcp-file-transfer.png",
+    "type": "University",
+    "tech_stack": ["Python", "Socket Module"],
+    "featured" : false
     }
+
 
   ]
 }

@@ -7,7 +7,7 @@ const Education = () => {
     "AI", "Networks",  "Databases"];
   return (
     <div className = "text-center">
-      <h3 className = "text-5xl font-bold underline">Education</h3>
+      <h2 className = "text-5xl font-bold text-center font-mono mb-2 text-white  sticky pt-10 pb-5 top-0 w-full underline  backdrop-blur-xs">Education</h2>
       <h4 className = "text-4xl font-bold my-3">University of Canterbury</h4>
       <p className = "text-2xl ">BSc majoring in Computer Science (8.94 GPA)</p>
       <p className = "text-2xl ">Expected Graduation Date: End of 2026</p>
@@ -105,7 +105,7 @@ export const About = () => {
     
 
       <div className = "max-w-5xl mx-auto px-4 z-10 ">
-        <h2 className = "text-7xl font-bold text-center font-mono mb-2 text-white sticky pt-10 top-0 w-full underline  backdrop-blur-xs">About Me</h2>
+        <h2 className = "text-5xl font-bold text-center font-mono mb-2 text-white sticky pt-10 pb-5 top-0 w-full underline  backdrop-blur-xs">About Me</h2>
         <p className = "text-center  text-2xl ">Kia Ora! I'm a final-year student based in Christchurch,
           New Zealand, and I'm looking to specialise in frontend development.</p>
         

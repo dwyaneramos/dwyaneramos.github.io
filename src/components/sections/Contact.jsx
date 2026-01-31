@@ -2,14 +2,17 @@ import {RevealOnScroll} from "../RevealOnScroll"
 import {useRef, useState} from "react"
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedin, FaGithub, FaFileCode } from "react-icons/fa";
-import emailjs from '@emailjs/browser';
-
+import person1 from "../../../public/assets/person1.png"
+import person2 from "../../../public/assets/person2.png"
 
 
 export const ContactFooter = () => {
-  const iconSize = 40;
+  const iconSize = 55;
  return (
-  <section className = "pl-10 fixed bottom-0 flex flex-row md:place-content-between place-content-center bg-[#011536] py-3 w-screen">
+  <section className = "pl-10 fixed bottom-0 z-100 flex flex-row place-content-center bg-[#011536] py-2 w-screen">
+    <img src={person1} alt="" className="h-100 fixed bottom-5 left-30 animate-idle"/>
+    <img src={person2} alt="" className="h-100 fixed bottom-5 right-30 animate-idle"/>
+    <img src={person2} alt="" className="h-100 fixed bottom-5 right-70 animate-idle"/>
    <div className = "flex flex-row gap-3">
       
       <a href="https://github.com/riz3ndrr" target="_blank">

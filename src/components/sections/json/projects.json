@@ -30,7 +30,7 @@
     "type": "University",
     "tech_stack": ["Java", "JavaFX", "Maven", "Gradle", "JUnit"]
     },
-{
+    {
     "title": "Portfolio Website",
     "subtitle": "for Post-Production Specialist",
     "description": "Developed an upgraded version of a portfolio website for my friend. Improvements included making it responsive and gave it a more unique look through things such as animations",

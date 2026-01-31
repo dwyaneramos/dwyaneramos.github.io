@@ -15,7 +15,7 @@ const Education = () => {
       <div className = "flex flex-row justify-center gap-3">
         {courses.map((c, id) => {
           return (
-            <div className="text-xl border-2 border-white/10 p-2 rounded-md" key = {id}>
+            <div className="text-md border-2 border-white/10 p-2 rounded-md" key = {id}>
               {c} 
             </div>
           )
@@ -105,13 +105,15 @@ export const About = () => {
     
 
       <div className = "max-w-5xl mx-auto px-4 z-10 ">
-        <h2 className = "text-7xl font-bold text-center font-mono mb-5 text-white sticky pt-10 top-0 w-full  backdrop-blur-xs">About Me</h2>
+        <h2 className = "text-7xl font-bold text-center font-mono mb-2 text-white sticky pt-10 top-0 w-full underline  backdrop-blur-xs">About Me</h2>
         <p className = "text-center  text-2xl ">Kia Ora! I'm a final-year student based in Christchurch,
           New Zealand, and I'm looking to specialise in frontend development.</p>
-
-        <Education/>        
-        <Skills/>
-        <WorkExperience/>
+        
+        <div className="mt-10 flex gap-20 flex-col">
+          <Education/>        
+          <Skills/>
+          <WorkExperience/>
+        </div>
       </div>
 
       <div className=" absolute top-0 left-0 h-full w-full overflow-hidden z-0">

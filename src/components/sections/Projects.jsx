@@ -23,11 +23,11 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
       }
     }, [showFullImg]);
     return (
-      <div ref={imageRef} className = {`rounded-xl mx-5 border-white border-1 grid py-5 my-3 px-5 grid-cols-1 md:${showFullImg ? "grid-cols-1" : "grid-cols-2"} gap-6`}> 
+      <div ref={imageRef} className = {`relative rounded-xl mx-5 border-white border-1 grid py-5 my-3 px-5 ${showFullImg ? "md:grid-cols-1" : "md:grid-cols-2"} gap-6`}> 
         
         <div className = "flex flex-col gap-2 items-center">
-          <img src={`${import.meta.env.BASE_URL}${image}`} alt={`Screenshot of ${title}`}
-          className = {`${showFullImg ? "h-135" : "h-45"} rounded-xl object-cover transition-all w-full mx-auto `}/>
+          <img src={`${import.meta.env.BASE_URL}${image}`} alt={`Screenshot of ${title}`} onClick ={()=>{if(showFullImg) setShowFullImg(false)}}
+          className = {`${showFullImg ? "h-135 cursor-pointer" : "h-45"} rounded-xl object-cover transition-all w-full mx-auto `}/>
           <button type="" className = "border-2 border-white w-40 rounded-md 
           p-2 cursor-pointer" onClick={()=>setShowFullImg(prev=>!prev)}>{buttonText}</button>
         </div>
@@ -46,7 +46,7 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
             
           </div>
           <a href={github} target = "_blank">
-            <FaGithub size = {githubLogoSize} className = "hover:-translate-y-1 absolute sm:bottom-0  right-0 linear transition"/>
+            <FaGithub size = {githubLogoSize} className = "hover:-translate-y-1 absolute right-3 bottom-3 linear transition"/>
           </a>
         </div>
       </div> 
@@ -73,7 +73,7 @@ export const Projects = () => {
         <div className="sticky py-2 w-screen top-0 backdrop-blur-xs z-100 flex flex-row items-center justify-center gap-5">
           <h1 className = "text-5xl font-bold text-center font-mono
             mb-2 text-white pb-2 underline ">Projects</h1>
-          <button type="" className="text-center items-center bg-blue-400 justify-center text-md cursor-pointer hover:-translate-y-1 transition flex flex-row
+          <button type="" className="text-center items-center bg-[#1077f5] justify-center text-md cursor-pointer hover:-translate-y-1 transition flex flex-row
             w-65 rounded-md border-2 border-white" onClick ={() => setDisplayAllProjects(prev => !prev)}>{buttonText}
             <FaArrowRight className="pl-5 py-0" size={30}/>
           </button> 

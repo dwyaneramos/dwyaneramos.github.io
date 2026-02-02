@@ -1,8 +1,10 @@
 
-import fishBodyImg from "../../../public/assets/fish-body.png" 
-import fishTailImg from "../../../public/assets/fish-tail.png" 
-import sharkBodyImg from "../../../public/assets/shark-body.png" 
-import sharkTailImg from "../../../public/assets/shark-tail.png"
+import fishBodyImg from "../../../public/assets/fish/fish-body.png" 
+import fishTailImg from "../../../public/assets/fish/fish-tail.png" 
+import fishBody2Img from "../../../public/assets/fish/fish-body-2.png" 
+import fishTail2Img from "../../../public/assets/fish/fish-tail-2.png" 
+import sharkBodyImg from "../../../public/assets/fish/shark-body.png" 
+import sharkTailImg from "../../../public/assets/fish/shark-tail.png"
 import githubLogo from "../../../public/assets/github-mark.png"
 import {useMemo} from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -14,6 +16,7 @@ export const Home = () => {
   const isMobile = window.screen.width < 640;
   const sharkBoundaries = isMobile ? [100, 80] : [40, 30]
   const fishBoundaries = isMobile ? [18, 14] : [7, 5]
+  const fish2Boundaries = isMobile ? [14, 10] : [6, 3]
   console.log(isMobile)
   
   return ( 
@@ -27,10 +30,12 @@ export const Home = () => {
         </div>
       </div>
       <div className="relative h-screen w-screen text-4xl overflow-hidden z-10">
-        <School upperY = {30} lowerY = {5} isSlow = {true} isSmall= {true} body = {fishBodyImg} tail = {fishTailImg}
-          amount = {30} widthBoundaries = {fishBoundaries} heightFactor = {2 / 3}/>
-        <School upperY = {45} lowerY = {45} isSlow = {true} isSmall= {false} body = {sharkBodyImg} tail = {sharkTailImg}
-          amount = {1} widthBoundaries = {sharkBoundaries} heightFactor = {5 / 11}/>
+        <School upperY = {20} lowerY = {5} body = {fishBody2Img} tail = {fishTail2Img}
+          amount = {15} widthBoundaries = {fish2Boundaries} heightFactor = {1/3} speedBoundaries = {[33, 35]}/>
+        <School upperY = {30} lowerY = {10} body = {fishBodyImg} tail = {fishTailImg}
+          amount = {25} widthBoundaries = {fishBoundaries} heightFactor = {2 / 3} speedBoundaries = {[28, 30]}/>
+        <School upperY = {45} lowerY = {45}  body = {sharkBodyImg} tail = {sharkTailImg}
+          amount = {1} widthBoundaries = {sharkBoundaries} heightFactor = {5 / 11} speedBoundaries = {[17,22]}/>
       </div>
   </div>
   )

@@ -1,5 +1,5 @@
 import {RevealOnScroll} from "../RevealOnScroll"
-import molamola from "../../../public/assets/molamola.png"
+import molamola from "../../../public/assets/fish/molamola.png"
 import {School} from "../Fish.jsx"
 
 const Education = () => {
@@ -7,7 +7,7 @@ const Education = () => {
     "AI", "Networks",  "Databases"];
   return (
     <div className = "text-center">
-      <h2 className = "text-5xl font-bold text-center font-mono mb-2 text-white  sticky pt-10 pb-5 top-0 w-full underline  backdrop-blur-xs">Education</h2>
+      <h3 className = "text-5xl font-bold underline">Education</h3>
       <h4 className = "text-4xl font-bold my-3">University of Canterbury</h4>
       <p className = "text-2xl ">BSc majoring in Computer Science (8.94 GPA)</p>
       <p className = "text-2xl ">Expected Graduation Date: End of 2026</p>
@@ -79,7 +79,7 @@ const WorkExperience = () => {
             <div>
               <h4 className ="text-xl font-bold">Picker / Packer</h4>
               <p className="mb-3">Dec 2025 - Feb 2026</p>
-              <p>Prepared shipments for back-to-school orders</p>
+              <p>Summer role where I prepared shipments for back-to-school orders</p>
             </div>
 
             <div>
@@ -117,8 +117,8 @@ export const About = () => {
       </div>
 
       <div className=" absolute top-0 left-0 h-full w-full overflow-hidden z-0">
-        <School upperY = {45} lowerY = {45} isSlow = {true} isSmall= {false} body = {molamola} tail = {molamola}
-          amount = {1} widthBoundaries = {[30, 30]} heightFactor = {5/6}/>
+        <School upperY = {45} lowerY = {45} body = {molamola} tail = {molamola}
+          amount = {1} widthBoundaries = {[30, 30]} heightFactor = {5/6} speedBoundaries={[30, 35]}/>
       </div>
   
     </section>

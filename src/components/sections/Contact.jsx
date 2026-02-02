@@ -2,9 +2,9 @@ import {RevealOnScroll} from "../RevealOnScroll"
 import {useRef, useState} from "react"
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedin, FaGithub, FaFileCode } from "react-icons/fa";
-import person1 from "../../../public/assets/person1.png"
-import person2 from "../../../public/assets/person2.png"
-import person3 from "../../../public/assets/parentAndChild.png"
+import person1 from "../../../public/assets/silhouettes/person1.png"
+import person2 from "../../../public/assets/silhouettes/person2.png"
+import person3 from "../../../public/assets/silhouettes/parentAndChild.png"
 
 
 export const ContactFooter = () => {

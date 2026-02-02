@@ -1,10 +1,9 @@
 import {useMemo} from "react"
 
-export const School = ({upperY, lowerY, isSlow, isSmall, body, tail, amount, widthBoundaries, heightFactor}) => {
+export const School = ({upperY, lowerY, body, tail, amount, widthBoundaries, heightFactor, speedBoundaries}) => {
   const upperWidth = widthBoundaries[0];
   const lowerWidth = widthBoundaries[1];
   
-  const speedBoundaries = isSlow ? [20, 22] : [6, 7];
   const upperSpeed = speedBoundaries[1];
   const lowerSpeed = speedBoundaries[0];
 

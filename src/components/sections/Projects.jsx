@@ -70,10 +70,11 @@ export const Projects = () => {
     
 
     <div className = "max-w-6xl flex items-center flex-col">
-        <div className="sticky py-2 w-screen top-0 backdrop-blur-xs z-100 flex flex-row items-center justify-center gap-5">
+        <div className="sticky py-2 w-screen top-0 backdrop-blur-xs z-100 flex flex-col md:flex-row items-center justify-center gap-5">
           <h1 className = "text-5xl font-bold text-center font-mono
-            mb-2 text-white pb-2 underline ">Projects</h1>
-          <button type="" className="text-center items-center bg-[#1077f5] justify-center text-md cursor-pointer hover:-translate-y-1 transition flex flex-row
+            md:mb-2 text-white md:pb-2 underline ">Projects</h1>
+          <button type="" className="text-center items-center bg-[#1077f5] justify-center
+            text-md cursor-pointer hover:-translate-y-1 transition flex flex-row
             w-65 rounded-md border-2 border-white" onClick ={() => setDisplayAllProjects(prev => !prev)}>{buttonText}
             <FaArrowRight className="pl-5 py-0" size={30}/>
           </button> 

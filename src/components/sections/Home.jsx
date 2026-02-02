@@ -15,7 +15,7 @@ import {School} from "../Fish.jsx"
 export const Home = () => {
   const isMobile = window.screen.width < 640;
   const sharkBoundaries = isMobile ? [100, 80] : [40, 30]
-  const fishBoundaries = isMobile ? [18, 14] : [7, 5]
+  const fishBoundaries = isMobile ? [30,20] : [7, 5]
   const fish2Boundaries = isMobile ? [14, 10] : [6, 3]
   console.log(isMobile)
   
@@ -26,7 +26,7 @@ export const Home = () => {
         <SubTitle className = "z-0"/>
         <div className="flex flex-row items-center gap-3">
           <FaLocationDot size={45}/>
-          <p className="text-2xl font-mono font-bold text-center">Christchurch, New Zealand</p>
+          <p className="text-2xl font-mono font-bold text-center">Christchurch, NZ</p>
         </div>
       </div>
       <div className="relative h-screen w-screen text-4xl overflow-hidden z-10">

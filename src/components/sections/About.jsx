@@ -6,13 +6,15 @@ const Education = () => {
   const courses = ["DSA", "Software Engineering",  "Computer Architecture",
     "AI", "Networks",  "Databases"];
   return (
-    <div className = "text-center">
-      <h3 className = "text-5xl font-bold underline">Education</h3>
-      <h4 className = "text-4xl font-bold my-3">University of Canterbury</h4>
-      <p className = "text-2xl ">BSc majoring in Computer Science (8.94 GPA)</p>
-      <p className = "text-2xl ">Expected Graduation Date: End of 2026</p>
+    <div className = "text-center w-full">
+      <h3 className = "text-4xl md:text-5xl font-bold underline">Education</h3>
+      <h4 className = "text-3xl md:text-4xl font-bold my-3">University of Canterbury</h4>
+      <div className="text-lg md:text-2xl">
+        <p className = "">BSc majoring in Computer Science (8.94 GPA)</p>
+        <p className = "">Expected Graduation Date: End of 2026</p>
+      </div>
       <h4 className = "text-3xl font-bold my-3">Relevant Coursework</h4>
-      <div className = "flex flex-row justify-center gap-3">
+      <div className = "flex flex-row justify-center flex-wrap gap-3">
         {courses.map((c, id) => {
           return (
             <div className="text-md border-2 border-white/10 p-2 rounded-md" key = {id}>
@@ -55,7 +57,7 @@ const Skills = () => {
 
   return (
       <div>
-        <h3 className = "text-5xl font-bold underline text-center">Skills</h3>
+        <h3 className = "text-4xl md:text-5xl font-bold underline text-center">Skills</h3>
         <div className = "">
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -70,29 +72,25 @@ const Skills = () => {
   )
 }
 
+const WorkBulletPoint = ({header, timeline, desc}) => {
+  return (
+    <div className="p-3 rounded-md border-white border-2">
+      <h4 className ="text-xl font-bold">{header}</h4>
+      <p className="mb-3">{timeline}</p>
+      <p>{desc}</p>
+    </div>
+  )
+}
+
 const WorkExperience = () => {
   return (
 
-        <div className = "">
-        <h3 className = "text-5xl font-bold underline text-center">Work Experience</h3>
+        <div className = "text-center md:text-left">
+        <h3 className = "text-4xl mb-5 md:text-5xl font-bold underline text-center">Work Experience</h3>
           <div className = "flex flex-col gap-3">
-            <div>
-              <h4 className ="text-xl font-bold">Picker / Packer</h4>
-              <p className="mb-3">Dec 2025 - Feb 2026</p>
-              <p>Summer role where I prepared shipments for back-to-school orders</p>
-            </div>
-
-            <div>
-              <h4 className ="text-xl font-bold">Mathematics Tutor</h4>
-              <p className="mb-3">Sept 2023 - Present</p>
-              <p>Attended to the needs of students ranging from year 2 to year 13 and various education levels and upbringing. I explained complex topics clearly to them and encourage them to try their best</p>
-            </div>
-
-            <div >
-              <h4 className ="text-xl font-bold">Sales Assistant</h4>
-              <p className="mb-3">Dec 2021 - Dec 2022</p>
-              <p>Actively engaged with customers and I was responsible for the opening/closing of the store</p>
-            </div>
+            <WorkBulletPoint header={"Picker / Packer"} timeline={"Dec 2025 - Feb 2026"} desc={"Summer role where I prepared shipments for back-to-school orders"}/>
+            <WorkBulletPoint header={"Mathematics Tutor"} timeline={"Sept 2023 - Present"} desc={"Attended to the needs of students ranging from year 2 to year 13 and various education levels and upbringing. I explained complex topics clearly to them and encourage them to try their best"}/>
+            <WorkBulletPoint header={"Sales Assistant"} timeline={"Dec 2021 - Dec 2022"} desc={"Actively engaged with customers and I was responsible for the opening/closing of the store"}/>
           </div>
         </div>
   )
@@ -106,7 +104,7 @@ export const About = () => {
 
       <div className = "max-w-5xl mx-auto px-4 z-10 ">
         <h2 className = "text-5xl font-bold text-center font-mono mb-2 text-white sticky pt-10 pb-5 top-0 w-full underline  backdrop-blur-xs">About Me</h2>
-        <p className = "text-center  text-2xl ">Kia Ora! I'm a final-year student based in Christchurch,
+        <p className = "text-center w-full text-wrap  text-lg md:text-2xl ">Kia Ora! I'm a final-year student based in Christchurch,
           New Zealand, and I'm looking to specialise in frontend development.</p>
         
         <div className="mt-10 flex gap-20 flex-col">

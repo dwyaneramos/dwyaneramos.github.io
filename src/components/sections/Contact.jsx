@@ -10,9 +10,10 @@ import person3 from "../../../public/assets/silhouettes/parentAndChild.png"
 export const ContactFooter = () => {
   const iconSize = 40;
  return (
-  <section className = "pl-10 fixed bottom-0 z-100 flex flex-row place-content-center bg-[#000] py-2 w-screen">
-    <img src={person1} alt="" className="h-80 fixed bottom-5 left-30 animate-idle"/>
-    <img src={person3} alt="" className="h-70 fixed bottom-0 right-20 animate-idle"/>
+  <section className = "pl-10 sticky md:fixed bottom-0 z-100 flex flex-row place-content-start md:place-content-center bg-[#000] py-2 w-screen">
+
+    <img src={person1} alt="" className="hidden md:inline h-80 fixed bottom-5 left-30 animate-idle"/>
+    <img src={person3} alt="" className="md:h-70 h-50 fixed bottom-5 md:bottom-0 right-0 animate-idle"/>
    <div className = "flex flex-row gap-3">
       
       <a href="https://github.com/riz3ndrr" target="_blank">

@@ -74,7 +74,7 @@ const Skills = () => {
 
 const WorkBulletPoint = ({header, timeline, desc}) => {
   return (
-    <div className="p-3 rounded-md border-white border-2">
+    <div className="p-3 rounded-md border-white border-1">
       <h4 className ="text-xl font-bold">{header}</h4>
       <p className="mb-3">{timeline}</p>
       <p>{desc}</p>
@@ -87,7 +87,7 @@ const WorkExperience = () => {
 
         <div className = "text-center md:text-left">
         <h3 className = "text-2xl mb-5 md:text-3xl font-bold underline text-center">Work Experience</h3>
-          <div className = "flex flex-col gap-3">
+          <div className = "flex flex-col gap-5 sm:gap-3">
             <WorkBulletPoint header={"Warehouse Operator"} timeline={"Dec 2025 - Feb 2026"} desc={"Summer role where I prepared shipments for back-to-school orders"}/>
             <WorkBulletPoint header={"Mathematics Tutor"} timeline={"Sept 2023 - Present"} desc={"Attended to the needs of students ranging from year 2 to year 13 and various education levels and upbringing. I explained complex topics clearly to them and encourage them to try their best"}/>
             <WorkBulletPoint header={"Sales Assistant"} timeline={"Dec 2021 - Dec 2022"} desc={"Actively engaged with customers and I was responsible for the opening/closing of the store"}/>

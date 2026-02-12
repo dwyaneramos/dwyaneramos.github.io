@@ -64,7 +64,7 @@ export const Home = () => {
 
 export const SubTitle = () => {
   return (
-    <h2 className = "text-2xl sm:text-4xl sm:pt-0 pt-5 font-mono font-bold text-center" >Final Year Computer Science Student</h2>
+    <h2 className = "text-xl sm:text-4xl sm:pt-0 pt-5 font-mono font-bold text-center" >Final Year Computer Science Student</h2>
 
   )
 }

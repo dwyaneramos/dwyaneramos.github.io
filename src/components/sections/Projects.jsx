@@ -46,7 +46,7 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type, live_s
             
           </div>
 
-         <div className="flex flex-row gap-4 absolute bottom-5">
+         <div className="flex flex-row gap-4 sm:absolute sm:bottom-5">
             <a href={github} target = "_blank">
               <h5 className="font-semibold underline text-xl mt-5 hover:-translate-y-1 transition ">Github</h5>
             </a>
@@ -80,7 +80,7 @@ export const Projects = () => {
         <div className="max-w-6xl flex flex-col">
           
           <div className="sticky h-full py-2  top-0 backdrop-blur-xs z-100 flex flex-col items-center justify-center ">
-            <h1 className = "text-4xl font-bold text-center font-mono
+            <h1 className = "text-3xl sm:text-4xl font-bold text-center font-mono
               mb-2 text-white underline ">Featured Projects</h1>
             <h2 className = "text-2xl font-bold text-center font-mono italic
               md:mb-2 text-white md:pb-2">Some of my favourite and proudest work</h2>

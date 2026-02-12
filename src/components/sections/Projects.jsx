@@ -7,7 +7,7 @@ import {FaArrowRight} from "react-icons/fa6"
 
 
 
-const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
+const Project = ({image, title, subtitle, desc, github, tech_stack, type, live_server}) => {
     const isMobile = window.screen.width < 640;
     const githubLogoSize = isMobile ? 40 : 40
     const [showFullImg, setShowFullImg] = useState(false)
@@ -27,8 +27,8 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
         
         <div className = "flex flex-col gap-2 items-center">
           <img src={`${import.meta.env.BASE_URL}${image}`} alt={`Screenshot of ${title}`} onClick ={()=>{if(showFullImg) setShowFullImg(false)}}
-          className = {`${showFullImg ? "h-135 cursor-pointer" : "h-45"} rounded-xl object-cover transition-all w-full mx-auto `}/>
-          <button type="" className = "hidden sm:block border-2 border-white w-40 rounded-md 
+          className = {`${showFullImg ? "h-135 cursor-pointer" : "h-55"} rounded-xl object-cover transition-all w-full mx-auto `}/>
+          <button type="" className = "hidden sm:block border-2 border-white w-40 rounded-md mt-3
           p-2 cursor-pointer" onClick={()=>setShowFullImg(prev=>!prev)}>{buttonText}</button>
         </div>
 
@@ -45,9 +45,17 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
             ))}
             
           </div>
-          <a href={github} target = "_blank">
-            <FaGithub size = {githubLogoSize} className = "hover:-translate-y-1 absolute right-3 bottom-3 linear transition"/>
-          </a>
+
+         <div className="flex flex-row gap-4 absolute bottom-5">
+            <a href={github} target = "_blank">
+              <h5 className="font-semibold underline text-xl mt-5 hover:-translate-y-1 transition ">Github</h5>
+            </a>
+            {live_server &&
+            <a href={live_server} target = "_blank">
+              <h5 className="font-semibold underline text-xl mt-5 hover:-translate-y-1 transition ">Live Server</h5>
+            </a>
+            }
+          </div> 
         </div>
       </div> 
     )
@@ -57,11 +65,11 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
 export const Projects = () => {
   const featuredProjects = projectJson.projects.filter((p) => p.featured).map((project, key) => (
       <Project key={key} image = {project.image} title = {project.title} subtitle = {project.subtitle}
-      desc = {project.description} github = {project.github} tech_stack = {project.tech_stack} type = {project.type}/>
+      desc = {project.description} github = {project.github} tech_stack = {project.tech_stack} type = {project.type} live_server = {project.live_server}/>
   ));
   const restOfProjects = projectJson.projects.filter((p) => !p.featured).map((project, key) => (
       <Project key={key} image = {project.image} title = {project.title} subtitle = {project.subtitle}
-      desc = {project.description} github = {project.github} tech_stack = {project.tech_stack} type = {project.type}/>
+      desc = {project.description} github = {project.github} tech_stack = {project.tech_stack} type = {project.type} live_server = {project.live_server}/>
   ));
 
 

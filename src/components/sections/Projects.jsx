@@ -28,7 +28,7 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
         <div className = "flex flex-col gap-2 items-center">
           <img src={`${import.meta.env.BASE_URL}${image}`} alt={`Screenshot of ${title}`} onClick ={()=>{if(showFullImg) setShowFullImg(false)}}
           className = {`${showFullImg ? "h-135 cursor-pointer" : "h-45"} rounded-xl object-cover transition-all w-full mx-auto `}/>
-          <button type="" className = "border-2 border-white w-40 rounded-md 
+          <button type="" className = "hidden sm:block border-2 border-white w-40 rounded-md 
           p-2 cursor-pointer" onClick={()=>setShowFullImg(prev=>!prev)}>{buttonText}</button>
         </div>
 
@@ -39,7 +39,7 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
 
 
 
-          <div className = "flex flex-wrap gap-2 ">
+          <div className = "mt-5 flex flex-wrap gap-2 ">
             {tech_stack.map((tech, key) => (
               <span key ={key} className = "border-white/10 border-3 py-1 px-2 rounded-full text-sm ">{tech}</span>
             ))}
@@ -55,35 +55,38 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type}) => {
 
 
 export const Projects = () => {
-  const [displayAllProjects, setDisplayAllProjects] = useState(false)
-  const projects = displayAllProjects ? projectJson.projects : projectJson.projects.filter((p) => p.featured)
-  const projectsDisplayed = projects.map((project, key) => (
+  const featuredProjects = projectJson.projects.filter((p) => p.featured).map((project, key) => (
       <Project key={key} image = {project.image} title = {project.title} subtitle = {project.subtitle}
       desc = {project.description} github = {project.github} tech_stack = {project.tech_stack} type = {project.type}/>
   ));
-  const buttonText = displayAllProjects ? "Display Featured Projects" : "Display All Projects"
+  const restOfProjects = projectJson.projects.filter((p) => !p.featured).map((project, key) => (
+      <Project key={key} image = {project.image} title = {project.title} subtitle = {project.subtitle}
+      desc = {project.description} github = {project.github} tech_stack = {project.tech_stack} type = {project.type}/>
+  ));
 
 
 
   return (
-  <section id="projects" className = "py-30 min-h-screen h-auto relative flex justify-center items-center">
+  <section id="projects" className = "py-30 min-h-screen h-auto relative flex w-screen flex-col justify-center items-center">
     
-
-    <div className = "max-w-6xl flex items-center flex-col">
-        <div className="sticky py-2 w-screen top-0 backdrop-blur-xs z-100 flex flex-col md:flex-row items-center justify-center gap-5">
-          <h1 className = "text-5xl font-bold text-center font-mono
-            md:mb-2 text-white md:pb-2 underline ">Projects</h1>
-          <button type="" className="text-center items-center bg-[#1077f5] justify-center
-            text-md cursor-pointer hover:-translate-y-1 transition flex flex-row
-            w-65 rounded-md border-2 border-white" onClick ={() => setDisplayAllProjects(prev => !prev)}>{buttonText}
-            <FaArrowRight className="pl-5 py-0" size={30}/>
-          </button> 
-        </div>
-        <div key={displayAllProjects ? "all" : "featured"} className="animate-enter">
+        <div className="max-w-6xl flex flex-col">
           
-        {projectsDisplayed}
+          <div className="sticky h-full py-2  top-0 backdrop-blur-xs z-100 flex flex-col items-center justify-center ">
+            <h1 className = "text-4xl font-bold text-center font-mono
+              mb-2 text-white underline ">Featured Projects</h1>
+            <h2 className = "text-2xl font-bold text-center font-mono italic
+              md:mb-2 text-white md:pb-2">Some of my favourite and proudest work</h2>
+          </div>
+          {featuredProjects}
         </div>
-    </div>
+        
+      <div className="max-w-6xl mt-10 flex flex-col">
+        <div className="sticky py-2  top-0 backdrop-blur-xs z-100 flex flex-col items-center justify-center ">
+          <h1 className = "text-4xl font-bold text-center font-mono
+            mb-2 text-white underline ">Other Projects</h1>
+        </div>
+        {restOfProjects}
+      </div>
 
   </section>
   )

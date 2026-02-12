@@ -21,6 +21,26 @@ export const Home = () => {
   
   return ( 
     <div id="#home" className = "z-40">
+
+<div className="absolute inset-0 pointer-events-none overflow-x-hidden">
+  <div
+    className="w-[200vw] -translate-x-[50vw] -translate-y-[10vh] overflow-x-hidden absolute inset-0 opacity-40 animate-pulse animate-light-rays"
+    style={{
+      background: `
+        repeating-conic-gradient(
+          from 180deg at 50% 0%,
+          rgba(255,255,255,0.2) 0deg,
+          rgba(255,255,255,0.2) 10deg,
+          transparent 10deg,
+          transparent 30deg
+        )
+      `,
+      WebkitMaskImage: "linear-gradient(to bottom, white, transparent)",
+      maskImage: "linear-gradient(to bottom, white, transparent)",
+      filter: "blur(20px)"
+    }}
+  />
+</div>
       <div className = "flex flex-col justify-center gap-3 items-center absolute top-2/5 w-screen">
         <Title/>
         <SubTitle className = "z-0"/>
@@ -31,7 +51,7 @@ export const Home = () => {
       </div>
       <div className="relative h-screen w-screen text-4xl overflow-hidden z-10">
         <School upperY = {20} lowerY = {5} body = {fishBody2Img} tail = {fishTail2Img}
-          amount = {15} widthBoundaries = {fish2Boundaries} heightFactor = {1/3} speedBoundaries = {[33, 35]}/>
+           amount = {15} widthBoundaries = {fish2Boundaries} heightFactor = {1/3} speedBoundaries = {[33, 35]}/>
         <School upperY = {30} lowerY = {10} body = {fishBodyImg} tail = {fishTailImg}
           amount = {25} widthBoundaries = {fishBoundaries} heightFactor = {2 / 3} speedBoundaries = {[28, 30]}/>
         <School upperY = {45} lowerY = {45}  body = {sharkBodyImg} tail = {sharkTailImg}

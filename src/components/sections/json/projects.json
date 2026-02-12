@@ -16,7 +16,7 @@
     {
     "title": "Rubik's Cube Competition Simulator",
     "subtitle": "Improved Web Version",
-    "description": "I wanted to make the original project more accessible, so I made a website version which vastly improves on the original. Some improvements include a more comprehensive stats page, search functionality and faster performance",
+    "description": "I wanted to make the original project more accessible, so I made a website version which vastly improves on the original. Some improvements include responsive design, search functionality and faster performance",
     "github": "https://github.com/dwyaneramos/wca-comp-sim",
     "image": "assets/projects/comp-sim-website-2.png",
     "type": "Personal",
@@ -50,7 +50,7 @@
     "github": "https://github.com/dwyaneramos/liam-portfolio",
     "image": "assets/projects/liam-portfolio.png",
     "type": "Freelance",
-    "tech_stack": ["React", "JavaScript", "TailwindCSS", "HTML" , "CSS"],
+    "tech_stack": ["React", "JavaScript", "TailwindCSS"],
     "featured" : false
     },
 

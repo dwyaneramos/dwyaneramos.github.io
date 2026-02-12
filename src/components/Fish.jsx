@@ -27,7 +27,7 @@ export const School = ({upperY, lowerY, body, tail, amount, widthBoundaries, hei
 
       return (
       <div key = {index}
-          className="absolute w-screen h-screen"
+          className="absolute w-screen h-screen brightness-30"
           style = {{
             top: `${stats.top}%`,
             left: `${stats.left}%`,

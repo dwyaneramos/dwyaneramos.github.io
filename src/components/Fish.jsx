@@ -33,11 +33,10 @@ export const School = ({upperY, lowerY, body, tail, amount, widthBoundaries, hei
             left: `${stats.left}%`,
           }}>
       
-        <div className="animate-whole-fish-movement"
+        <div className="animate-whole-fish-movement relative flex flex-row flex-row-reverse"
              style = {{
             "--duration": `${stats.speed}s`
           }}>
-          
           <img src={body} alt="fish body" 
               className="absolute"
               style ={{
@@ -46,9 +45,9 @@ export const School = ({upperY, lowerY, body, tail, amount, widthBoundaries, hei
             }}
           />
           <img src={tail} alt="fish Tail"
-              className="absolute animate-fish-tail-movement"
+              className="absolute animate-fish-tail-movement -translate-x-2"
               style ={{
-                width: `${stats.width}vw`,
+                width: `${stats.width/5}vw`,
                 height: `${stats.height}vw`,
                 "--tail-duration": `${stats.speed/7}s` 
             }}

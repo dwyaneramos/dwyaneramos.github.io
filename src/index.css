@@ -92,12 +92,12 @@ html, body {
       transform: scaleY(1) translateY(0) rotate(-1deg)
     }
     50% {
-      transform: scaleY(1.02) translateY(-1vh) rotate(1deg)
+      transform: scaleY(1.01) translateY(-1vh) rotate(1deg)
     }
   }
 
   .animate-idle {
-    animation: idle 5s linear infinite;
+    animation: idle 10s linear infinite;
 
   }
 

@@ -1,10 +1,10 @@
 
 import fishBodyImg from "../../../public/assets/fish/fish-body.png" 
-import fishTailImg from "../../../public/assets/fish/fish-tail.png" 
+import fishTailImg from "../../../public/assets/fish/fish-tail-1.png" 
 import fishBody2Img from "../../../public/assets/fish/fish-body-2.png" 
-import fishTail2Img from "../../../public/assets/fish/fish-tail-2.png" 
+import fishTail2Img from "../../../public/assets/fish/fish-2-tail-2.png" 
 import sharkBodyImg from "../../../public/assets/fish/shark-body.png" 
-import sharkTailImg from "../../../public/assets/fish/shark-tail.png"
+import sharkTailImg from "../../../public/assets/fish/shark-tail-1.png"
 import githubLogo from "../../../public/assets/github-mark.png"
 import {useMemo} from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";

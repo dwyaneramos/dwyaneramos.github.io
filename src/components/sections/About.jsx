@@ -1,6 +1,5 @@
 import {RevealOnScroll} from "../RevealOnScroll"
 import molamola from "../../../public/assets/fish/molamola.png"
-import {School} from "../Fish.jsx"
 
 const Education = () => {
   const courses = ["DSA", "Software Engineering",  "Computer Architecture",
@@ -114,10 +113,6 @@ export const About = () => {
         </div>
       </div>
 
-      <div className=" absolute top-0 left-0 h-full w-full overflow-hidden z-0">
-        <School upperY = {45} lowerY = {45} body = {molamola} tail = {molamola}
-          amount = {1} widthBoundaries = {[30, 30]} heightFactor = {5/6} speedBoundaries={[30, 35]}/>
-      </div>
   
     </section>
   )

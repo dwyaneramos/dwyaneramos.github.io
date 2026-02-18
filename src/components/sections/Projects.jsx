@@ -33,8 +33,8 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type, live_s
         </div>
 
         <div className = {`${showFullImg ? "hidden": ""}`}>
-          <h3 className = "text-2xl  font-mono font-black">{title}</h3>
-          <h4 className = "text-xl font-mono font-semibold text-gray-200 ">{subtitle} </h4>
+          <h3 className = "text-lg sm:text-2xl  font-mono font-black">{title}</h3>
+          <h4 className = "text-md sm:text-xl font-mono font-semibold text-gray-200 ">{subtitle} </h4>
           <p>{desc}</p> 
 
 

@@ -1,4 +1,4 @@
-# My portfolio website
+# My portfolio website as a computer science student
 
 ## [Live Server Link](https://dwyaneramos.github.io/)
 

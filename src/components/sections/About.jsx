@@ -3,7 +3,7 @@ import molamola from "../../../public/assets/fish/molamola.png"
 
 const Education = () => {
   const courses = ["DSA", "Software Engineering",  "Computer Architecture",
-    "AI", "Networks",  "Databases"];
+    "AI", "Networks",  "Databases", "Web Computing Architectures"];
   return (
     <div className = "text-center w-full">
       <h3 className = "text-2xl md:text-3xl font-bold underline">Education</h3>
@@ -50,8 +50,8 @@ const SkillsSection = ({header, skills, growth}) => {
 }
 
 const Skills = () => {
-  const programmingLanguages = ["Python", "JavaScript", "SQL"];
-  const tools = ["React", "Git", "Linux", "NumPy", "Vite", "TailwindCSS", "Pandas", "APIs"];
+  const programmingLanguages = ["Python", "JavaScript", "TypeScript", "C#", "SQL"];
+  const tools = ["React", "Git", "Linux", "NumPy", "EF Core", ".NET", "Svelte", "Vite", "TailwindCSS", "Pandas", "APIs"];
   const languages = ["English", "Tagalog", "Spanish"]
 
   return (

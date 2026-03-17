@@ -25,6 +25,19 @@
     "tech_stack": ["JavaScript", "React", "TailwindCSS", "ChartJS", "WCA API"],
     "featured" : true
     },
+
+    {
+    "title": "Outstanding",
+    "subtitle": "Full-Stack Task Tracker App (Ongoing)",
+    "description": "Working in a team of 6 under the Agile scrum methodology.",
+    "github": "",
+    "live_server": "",
+    "image": "assets/projects/302.png",
+    "type": "University",
+    "tech_stack": ["C#", "Svelte", "TypeScript", "TailwindCSS", ".NET", "EF Core"],
+    "featured" : true
+    },
+
     {
     "title": "Drift Fever",
     "subtitle": "Car Racing Simulation Game",
@@ -36,6 +49,7 @@
     "tech_stack": ["Java", "JavaFX", "Maven", "Gradle", "JUnit"],
     "featured" : true
     },
+
     {
     "title": "Deadly Fight",
     "subtitle": "2D Fighting Game",
@@ -47,6 +61,19 @@
     "tech_stack": ["Python", "PyGame"],
     "featured" : true
     },
+
+    {
+    "title": "Step Counter",
+    "subtitle": "Uni Project (Ongoing)",
+    "description": "Developing firmware for the STM32C071 board to implement an embedded system to record a user's steps and estimate the travelled distance",
+    "github": "",
+    "live_server": "",
+    "image": "assets/projects/step-counter.png",
+    "type": "University",
+    "tech_stack": ["C"],
+    "featured" : false
+    },
+
     {
     "title": "Portfolio Website",
     "subtitle": "for Post-Production Specialist",
@@ -69,6 +96,19 @@
     "image": "assets/projects/gunslinger.jpg",
     "type": "University",
     "tech_stack": ["C"],
+    "featured" : false
+    },
+
+
+    {
+    "title": "Travel Blog RESTful API",
+    "subtitle": "Uni Project (Ongoing)",
+    "description": "Developing an API web service as part of the SENG365 Assignment",
+    "github": "",
+    "live_server": "",
+    "image": "assets/projects/365.png",
+    "type": "University",
+    "tech_stack": ["Node.js", "Express", "TypeScript"],
     "featured" : false
     },
 

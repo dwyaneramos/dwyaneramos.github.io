@@ -47,10 +47,15 @@ const Project = ({image, title, subtitle, desc, github, tech_stack, type, live_s
           </div>
 
          <div className="flex flex-row gap-4">
-            <a href={github} target = "_blank">
-              <h5 className="font-semibold underline text-xl mt-5 hover:-translate-y-1 transition ">Github</h5>
-            </a>
-            {live_server &&
+            {
+              github &&
+
+              <a href={github} target = "_blank">
+                <h5 className="font-semibold underline text-xl mt-5 hover:-translate-y-1 transition ">Github</h5>
+              </a>
+            }
+            {
+            live_server &&
             <a href={live_server} target = "_blank">
               <h5 className="font-semibold underline text-xl mt-5 hover:-translate-y-1 transition ">Live Server</h5>
             </a>

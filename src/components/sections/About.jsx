@@ -87,6 +87,7 @@ const WorkExperience = () => {
         <div className = "text-center md:text-left">
         <h3 className = "text-2xl mb-5 md:text-3xl font-bold underline text-center">Work Experience</h3>
           <div className = "flex flex-col gap-5 sm:gap-3">
+            <WorkBulletPoint header={"Computer Science Tutor"} timeline={"Feb 2026 - Present"} desc={"I'm tutoring COSC131, an introductory course to python. I'm aiding over 100 students on their programming journey."}/>
             <WorkBulletPoint header={"Warehouse Operator"} timeline={"Dec 2025 - Feb 2026"} desc={"Summer role where I prepared shipments for back-to-school orders"}/>
             <WorkBulletPoint header={"Mathematics Tutor"} timeline={"Sept 2023 - Present"} desc={"Attended to the needs of students ranging from year 2 to year 13 and various education levels and upbringing. I explained complex topics clearly to them and encourage them to try their best"}/>
             <WorkBulletPoint header={"Sales Assistant"} timeline={"Dec 2021 - Dec 2022"} desc={"Actively engaged with customers and I was responsible for the opening/closing of the store"}/>
@@ -104,7 +105,7 @@ export const About = () => {
       <div className = "max-w-5xl mx-auto px-4 z-10 ">
         <h2 className = "text-4xl font-bold text-center font-mono mb-2 text-white sticky pt-10 pb-5 top-0 w-full underline  backdrop-blur-xs">About Me</h2>
         <p className = "text-center w-full text-wrap  text-lg md:text-2xl ">Kia Ora! I'm a final-year student based in Christchurch,
-          New Zealand, and I'm looking to specialise in frontend development.</p>
+          New Zealand. I'm looking to apply my skills to develop software that has a positive impact on people.</p>
         
         <div className="mt-10 flex gap-20 flex-col">
           <Education/>        
